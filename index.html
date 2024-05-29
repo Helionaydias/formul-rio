@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hands-on-09</title>
+
+  <!-- chamada google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+
+  <!-- chamada da font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- container principal -->
+  <div class="container">
+    <!-- titulo e imagem -->
+    <div class="box">
+      <h2>Crie sua conta</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet soluta aperiam ab et asperiores aut pariatur suscipit accusamus, cumque esse, quos dolor accusantium, voluptas modi exercitationem tempora magnam rem.</p>
+      <img src="/img/virtual-meeting-81.svg" alt="">
+    </div>
+
+    <!-- formulário -->
+    <div class="box">
+      <h2>Prencha seus dados</h2>
+      <form id="dados" name="dados" method="post" action="" class="form">
+
+        <div class="box-form-item">
+          <label for="nome">Nome</label>
+          <i class="fa-regular fa-user icon"></i>
+          <input type="text" placeholder="Ex: fulano" id="nome" name="nome" required>
+        </div>
+
+        <div class="box-form-item">
+          <label for="sobreNome">Sobrenome</label>
+          <i class="fa-solid fa-user-tag icon"></i>
+          <input type="text" placeholder="Ex: de Tal" id="sobreNome" name="sobreNome" required>
+        </div>
+
+        <div class="box-form-item">
+          <label for="usuario">Usuário</label>
+          <i class="fa-solid fa-user-secret icon"></i>
+          <input type="text" placeholder="Ex: user12345" id="usuario" name="usuario" required>
+        </div>
+
+        <div class="box-form-item">
+          <label for="senha">Senha</label>
+          <i class="fa-solid fa-key icon"></i>
+          <input type="password" placeholder="Ex: user12345!@#$%" id="senha" name="senha" required>
+        </div>
+
+        <div class="box-form-item">
+          <label for="email">Email</label>
+          <i class="fa-regular fa-envelope icon"></i>
+          <input type="email" placeholder="Ex: seuemail@email.com" id="email" name="email" required>
+        </div>
+
+        <div class="box-form-item">
+          <label for="dataNascimento">Data de Nascimento</label>
+          <i class="fa-solid fa-cake-candles icon"></i>
+          <input type="date" id="dataNascimento" name="dataNascimento" required>
+        </div>
+
+        <div class="box-form-item">
+          <label>Tipo de conta</label>
+          <div class="box-form-radio">
+
+            <div class="radio">
+              <input type="radio" id="conta1" name="conta">
+              <label for="conta1">Free</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="conta2" name="conta">
+              <label for="conta2">Gold</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="conta3" name="conta">
+              <label for="conta3">Premium</label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="box-form-item">
+          <label for="area" class="select">Área de atuação</label>
+          <select name="area" id="area">
+            <option value="0" disable selected>Selecione sua opção</option>
+            <option value="1">Área 01</option>
+            <option value="2">Área 02</option>
+            <option value="3">Área 03</option>
+            <option value="4">Área 04</option>
+          </select>
+        </div>
+
+        <div class="box-form-button">
+          <button type="submit">Criar conta <i class="fa-regular fa-circle-right arrow"></i></button>
+        </div>
+
+
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
